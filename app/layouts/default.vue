@@ -19,6 +19,9 @@ const group = ref(null)
         <v-btn color="primary" to="/">
           チャット
         </v-btn>
+        <v-btn color="primary" to="/rag">
+          RAG
+        </v-btn>
         <v-btn color="primary" to="/transcription">
           文字起こし
         </v-btn>
