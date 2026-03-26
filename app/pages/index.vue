@@ -39,7 +39,7 @@ const postChat = async () => {
     body:{
       user_id: "test",
       message: inputText,
-      model:"hogehoge"
+      model:"local"
     }
   })
 

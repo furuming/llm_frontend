@@ -46,6 +46,14 @@
 
         <v-row>
             <v-col>
+                <v-btn to="/rag/retrieves">
+                    retrieves
+                </v-btn>
+            </v-col>
+        </v-row>
+
+        <v-row>
+            <v-col>
                 <v-file-input label="ファイル" v-model="file">
                     
                 </v-file-input>
