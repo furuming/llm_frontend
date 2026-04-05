@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import type { ChatResponse } from '~/types/chat';
 
 
 const prompt = ref("")
@@ -15,11 +14,10 @@ type ChatHistory = {
   recorded_at: Date  
 }
 
-const histories = ref<ChatHistory[]>([])
 
 
 
-const postChat = async () => {
+const sendMessage = async () => {
 
   const inputText = prompt.value
 
@@ -83,7 +81,7 @@ const postChat = async () => {
         <v-col>
           <v-textarea max-height="15vh" variant="outlined" v-model="prompt">
             <template #append>
-              <v-btn  @click="postChat">
+              <v-btn  @click="sendMessage">
                 <v-icon>mdi-send</v-icon>
               </v-btn>
 

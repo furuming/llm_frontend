@@ -2,7 +2,7 @@
 
 const title = "Chat NCB"
 
-const drawer = ref(false)
+const drawer = ref(true)
 const group = ref(null)
 
 </script>
@@ -12,6 +12,9 @@ const group = ref(null)
     <v-app id="inspire">
 
       <v-app-bar>
+        <template #prepend>
+          <v-btn icon @click="drawer = !drawer"></v-btn>
+        </template>
         <template #title>
           {{ title }}
         </template>
@@ -27,6 +30,12 @@ const group = ref(null)
         </v-btn>
         
       </v-app-bar>
+
+      
+    <v-navigation-drawer v-model="drawer">
+      <!--  -->
+      <Project></Project>
+    </v-navigation-drawer>
 
       <v-main>
         <!--  -->
